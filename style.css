@@ -46,6 +46,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color:rgb(89, 89, 245)
 }
 .active{
     pointer-events:none;
