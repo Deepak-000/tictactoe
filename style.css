@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background:linear-gradient(to bottom right,lightblue,lightgrey,lightblue)
+    background:linear-gradient(to bottom right,rgb(225, 151, 243),rgb(236, 216, 216),rgb(168, 198, 255))
 }
 .container{
     height: 100vh;
@@ -35,8 +35,8 @@ body{
     padding: 10px;
     border: 2px solid transparent;
     border-radius: 5px;
-    box-shadow: 0 3px 9px 0px rgba(219, 231, 231, 0.692) inset,
-                0 -3px 9px 0px rgba(219, 231, 231, 0.692) inset;
+    box-shadow: 0 3px 9px 0px rgba(136, 247, 247, 0.514) inset,
+                0 -3px 9px 0px rgba(61, 243, 243, 0.356) inset;
 }
 .ord{
     position: absolute;
@@ -109,7 +109,33 @@ button{
     position: absolute;
     transform: translateY(-240px);
 }
+.next{
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    z-index: 5;
+    position: absolute;
+    transform: translateY(-200px);
+    color: rgb(240, 16, 16);
+}
 .head >span{
     padding-left:20px ;
     color: rgb(89, 16, 223);
+}
+.next > span{
+    color:rgb(96, 100, 32);
+}
+.footer{
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    z-index: 5;
+    position: absolute;
+    bottom :0px;
+    font-size: 25px;
+    color:rgba(56, 58, 58, 0.842)
 }
