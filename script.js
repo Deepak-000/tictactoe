@@ -31,7 +31,7 @@ ord.forEach((e) => {
                 ord[pat[i][2]].classList.add('win');
                 res.innerHTML =" ' "+ ord[pat[i][0]].innerText+" ' " + " is WON";
                 message.classList.add('mes-win');
-                c = 1;
+                next.innerHTML = "";
                 break;
             }
         }
