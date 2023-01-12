@@ -1,4 +1,5 @@
 let ord = document.querySelectorAll('.ord');
+let next = document.querySelector('.next');
 console.log(ord)
 let arr = ["O","X"];
 const pat = [
@@ -17,10 +18,10 @@ let flag;
 ord.forEach((e) => {
     e.addEventListener('click',()=>{
         e.innerText = arr[i];
+        next.innerHTML = "'"+arr[(i+1)%2]+"'" + '<span> &nbsp is next </span>';
         i++;
         c++;
         let message = document.querySelector('.message');
-        //console.log(ord[j++]);
         let res = document.querySelector('.res');
         i = i%2;
         for(let i = 0 ; i <pat.length ; i++){
@@ -28,7 +29,6 @@ ord.forEach((e) => {
                 ord[pat[i][0]].classList.add('win');
                 ord[pat[i][1]].classList.add('win');
                 ord[pat[i][2]].classList.add('win');
-                //console.log(pat[i]);
                 res.innerHTML =" ' "+ ord[pat[i][0]].innerText+" ' " + " is WON";
                 message.classList.add('mes-win');
                 c = 1;
@@ -50,12 +50,3 @@ const mes = ()=>{
     emoji.innerHTML = '&nbsp; 😇' ;
     message.classList.add('mes-win');
 }
-let button = document.querySelector('#button');
-button.addEventListener('click',()=>{
-    ord.forEach(e=>{
-        e.remove.classList('active');
-        e.innerHTML = '';
-    })
-    let message = document.querySelector('.message');
-    message.remove.classList('mes-win');
-})
