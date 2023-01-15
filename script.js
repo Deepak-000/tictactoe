@@ -44,6 +44,7 @@ ord.forEach((e) => {
 
 const mes = ()=>{
     let res = document.querySelector('.res');
+    next.innerHTML = "";
     let message = document.querySelector('.message');
     res.innerHTML = "&nbsp Draw Match";
     let emoji = document.querySelector('.emoji');
