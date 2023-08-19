@@ -37,6 +37,17 @@ ord.forEach((e) => {
         }
         if(c == 9){
             mes();
+            for(let i = 0 ; i <pat.length ; i++){
+                if((ord[pat[i][0]].innerText == "O" || ord[pat[i][0]].innerText == "X") && ord[pat[i][0]].innerText == ord[pat[i][1]].innerText && ord[pat[i][1]].innerText == ord[pat[i][2]].innerText){
+                    ord[pat[i][0]].classList.add('win');
+                    ord[pat[i][1]].classList.add('win');
+                    ord[pat[i][2]].classList.add('win');
+                    res.innerHTML =" ' "+ ord[pat[i][0]].innerText+" ' " + " is WON";
+                    message.classList.add('mes-win');
+                    next.innerHTML = "";
+                    break;
+                }
+            }
         }
         e.classList.add('active');
     })
