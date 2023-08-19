@@ -4,7 +4,18 @@
     box-sizing: border-box;
 }
 body{
-    background:linear-gradient(to bottom right,rgb(225, 151, 243),rgb(236, 216, 216),rgb(168, 198, 255))
+    background:linear-gradient(to bottom right,rgb(225, 151, 243),rgb(236, 216, 216),rgb(168, 198, 255));
+    animation: back_animate 3s infinite ease-in-out;
+    transition: all .4s ease;
+}
+@keyframes back_animate {
+    0%{
+        background:linear-gradient(to bottom right,rgb(225, 151, 243),rgb(236, 216, 216),rgb(168, 198, 255));
+    }50%{
+        background:linear-gradient(to bottom right,rgb(199, 48, 236),rgb(236, 216, 216),rgb(16, 81, 202));
+    }100%{
+        background:linear-gradient(to bottom right,rgb(225, 151, 243),rgb(236, 216, 216),rgb(168, 198, 255));
+    }
 }
 .container{
     height: 100vh;
