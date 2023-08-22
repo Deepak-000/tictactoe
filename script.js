@@ -18,7 +18,7 @@ let flag;
 ord.forEach((e) => {
     e.addEventListener('click',()=>{
         e.innerText = arr[i];
-        next.innerHTML = "'"+arr[(i+1)%2]+"'" + '<span> &nbsp is next </span>';
+        next.innerHTML = "'&nbsp;"+arr[(i+1)%2]+"&nbsp;'" + '<span>&nbsp; is next </span>';
         i++;
         c++;
         let message = document.querySelector('.message');
@@ -59,6 +59,6 @@ const mes = ()=>{
     let message = document.querySelector('.message');
     res.innerHTML = "&nbsp Draw Match";
     let emoji = document.querySelector('.emoji');
-    emoji.innerHTML = '&nbsp; 😇' ;
+    emoji.innerHTML = '&nbsp; ✌' ;
     message.classList.add('mes-win');
 }

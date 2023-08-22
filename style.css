@@ -4,19 +4,21 @@
     box-sizing: border-box;
 }
 body{
-    background:linear-gradient(to bottom right,rgb(225, 151, 243),rgb(236, 216, 216),rgb(168, 198, 255));
-    animation: back_animate 3s infinite ease-in-out;
-    transition: all .4s ease;
+    /* animation: back_animate 3s infinite ease-in-out alternate-reverse;
+    transition: animation .4s ease-in-out; */
+    background: rgb(191, 228, 245);
 }
-@keyframes back_animate {
+/* @keyframes back_animate {
     0%{
-        background:linear-gradient(to bottom right,rgb(225, 151, 243),rgb(236, 216, 216),rgb(168, 198, 255));
-    }50%{
-        background:linear-gradient(to bottom right,rgb(199, 48, 236),rgb(236, 216, 216),rgb(16, 81, 202));
+        background:linear-gradient(to bottom,);
+    }30%{
+        background:rgb(11, 149, 173);
+    }65%{
+        background:rgb(31, 143, 163);
     }100%{
-        background:linear-gradient(to bottom right,rgb(225, 151, 243),rgb(236, 216, 216),rgb(168, 198, 255));
+        background:rgb(40, 119, 209) ;
     }
-}
+} */
 .container{
     height: 100vh;
     width: 100%;
@@ -25,10 +27,12 @@ body{
     justify-content: center;
 }
 .grid{
-    height:300px;
-    width: 300px;
+    height:311px;
+    width: 305px;
+    border-radius: 5px;
     background:transparent;
-    /*border: 1px solid rgb(131, 245, 220);*/
+    /* box-shadow: 0px 6px 20px 2px grey; */
+    /* border: 1px solid rgb(131, 245, 220); */
 }
 .grid .box{
     height:104px;
@@ -40,7 +44,6 @@ body{
 }
 .cls{
     height: 100px;
-    /* margin:5px 5px; */
     width: 99.2px;
     background: #fff;
     padding: 10px;
@@ -136,17 +139,6 @@ button{
     color: rgb(89, 16, 223);
 }
 .next > span{
-    color:rgb(96, 100, 32);
-}
-.footer{
-    height:70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    z-index: 5;
-    position: absolute;
-    bottom :0px;
-    font-size: 25px;
-    color:rgba(56, 58, 58, 0.842)
+    color:rgb(34, 11, 138);
+    font-family:'Courier New', Courier, monospace;
 }
